@@ -21,7 +21,7 @@
                     <span v-for="(word,key) in words.filter((data,index) => index < 20)" :key="key" v-bind:class="key!=0 || writingWordControl " class="words ml-2">{{ word }}</span>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card-text">
                 <div class="card-body bg-secondary">
                     <div class="input-group input-group-lg">
                         <input type="text" class="form-control" v-model="writingWord">
@@ -136,6 +136,12 @@ export default {
 .words {
   font-size: 24px;
   font-weight: 400;
+}
+.jumbotron .lead {
+    margin-top: 20px;
+}
+.card-text {
+    margin-top: 20px;
 }
 .focused-word {
   background-color: #dddddd;
