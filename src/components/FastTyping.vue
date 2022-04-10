@@ -92,8 +92,8 @@ export default {
     },
     percentageAccuracyWords () {
       const percentage = (100 / this.numberWordsEnteredMinute)
-      const val = (percentage * this.trueCount).toFixed(2)
-      return isNaN(val) ? 0 : val
+      const val = (percentage * this.trueCount)
+      return isNaN(val) ? 0 : val.toFixed(2)
     }
   },
   methods: {
