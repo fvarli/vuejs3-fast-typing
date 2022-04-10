@@ -3,6 +3,12 @@
         <h1 class="display-4 text-center">FastTyping</h1>
         <p class="lead text-center">Improve Your Typing Speed</p>
         <hr class="my-4">
+        <span>Info:</span>
+        <ul>
+            <li>Time: 60 seconds</li>
+            <li>Click space key to write new word</li>
+        </ul>
+        <hr class="my-4">
         <div v-if="isFinish" class="alert alert-primary col-12">
             <div class="game-over">
                 <h1 class="col-6">Game Over</h1>
@@ -12,8 +18,8 @@
             </div>
             <p class="entered-words-number  col-6">Number of Words Entered per Minute: {{ numberWordsEnteredMinute }}</p>
             <span class=" col-6">Percentage Accuracy of Words: {{ percentageAccuracyWords}}% </span><br>
-            <span class=" col-6"> Number of True: {{ trueCount }}</span><br>
-            <span class=" col-6"> Number of False: {{ falseCount }}</span>
+            <span class=" col-6"> Number of Correct: {{ trueCount }}</span><br>
+            <span class=" col-6"> Number of Wrong: {{ falseCount }}</span>
         </div>
         <div v-else>
             <div class="card">
