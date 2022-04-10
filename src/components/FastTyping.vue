@@ -1,11 +1,7 @@
 <template>
     <div class="jumbotron container">
         <h1 class="display-4 text-center">FastTyping</h1>
-        <p class="lead text-center">Improve your Typing Speed</p>
-        <div>
-            Number of True: <b>{{ trueCount }}</b>
-            Number of False: <b>{{ falseCount }}</b>
-        </div>
+        <p class="lead text-center">Improve Your Typing Speed</p>
         <hr class="my-4">
         <div v-if="isFinish" class="alert alert-primary col-12">
             <div class="game-over">
