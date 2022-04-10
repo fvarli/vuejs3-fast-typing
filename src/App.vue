@@ -1,26 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Fast Typing APP with Vue.js"/>
+  <FastTyping/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FastTyping from '@/components/FastTyping.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    FastTyping
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
